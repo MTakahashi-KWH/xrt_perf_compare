@@ -1,0 +1,17 @@
+[project]
+name = "xrt_perf_compare"
+version = "0.1.0"
+description = "Targeted performance comparison testbed for captured XRT call contexts"
+channels = ["conda-forge"]
+platforms = ["linux-64"]
+
+[dependencies]
+python = ">=3.11,<3.13"
+pip = "*"
+cupy = "*"
+numba = "*"
+
+[pypi-dependencies]
+xrt = "*"
+taichi = "*"
+cython = "*"
