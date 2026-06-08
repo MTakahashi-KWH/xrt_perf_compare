@@ -49,7 +49,7 @@ def run_context_with_timing(
         profiler.enable()
 
     start = time.perf_counter()
-    _result = impl_fn(context_payload)  # TODO: consume output/validate equivalence.
+    _ = impl_fn(context_payload)  # TODO: consume output/validate equivalence.
     elapsed = time.perf_counter() - start
 
     if profiler is not None:
